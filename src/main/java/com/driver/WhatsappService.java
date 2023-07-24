@@ -28,5 +28,7 @@ public class WhatsappService {
     public int removeUser(User user)throws Exception {
         return whatsappRepository.removeUser(user);
     }
-
+    public String findMessage(Date start, Date end, int k) throws Exception {
+        return whatsappRepository.findMessage(start, end, k);
+    }
 }
